@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/tweets', 'App\Http\Controllers\Tweet\GetController');
 Route::post('/tweets', 'App\Http\Controllers\Tweet\PostController');
+Route::delete('/tweets/{tweet_id}', 'App\Http\Controllers\Tweet\DeleteController');
