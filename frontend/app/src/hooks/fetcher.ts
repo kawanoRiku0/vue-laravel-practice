@@ -26,9 +26,14 @@ export const useFetch = <T>(
         fetchData();
     });
 
+    const mutate = () => {
+        fetchData();
+    };
+
     return {
         data,
         loading,
         error,
+        mutate,
     };
 };
